@@ -1,0 +1,220 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 413px;
+  height: 607px;
+  border-radius: 24px;
+  background: var(--color-primary--500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 80px 10px 80px 10px;
+
+  & &__hero-container {
+    width: 381px;
+    height: 381px;
+    margin: 16px 16px 0 16px;
+    border-radius: 16px;
+    object-fit: cover;
+    position: relative;
+  }
+
+  & &__hero-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+
+  & &__hero-logo {
+    width: 176px;
+    height: 104px;
+    position: absolute;
+    left: 24px;
+    top: 253px;
+  }
+
+  & &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 357px;
+  }
+
+  & &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: var(--color-title);
+    margin-left: 4px;
+  }
+
+  & &__info-container {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & &__series-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: var(--color-primary--200);
+    margin-left: 4px;
+  }
+
+  & &__series-time-container {
+    width: 78px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-right: -4px;
+  }
+
+  & &__series-time-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  & &__series-time-value {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--color-primary--200);
+  }
+
+  & &__stroke {
+    width: 349px;
+    height: 1.5px;
+    background: var(--color-primary--400);
+    margin: 10px 0 0 5px;
+  }
+
+  & &__details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 21px 0 0 4px;
+    gap: 16px;
+  }
+
+  & &__cover-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  & &__cover-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  & &__series-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  & &__series-release-date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    margin: 0 6px 3px 0;
+    color: var(--color-primary--200);
+  }
+
+  & &__bulletpoint {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary--200);
+    margin-bottom: 5px;
+  }
+
+  & &__series-season-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: var(--color-primary--200);
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 440px) {
+    width: 343px;
+    height: 537px;
+
+    & &__hero-container {
+      width: 311px;
+      height: 311px;
+      border-radius: 16px;
+      object-fit: cover;
+      position: relative;
+    }
+
+    & &__hero-logo {
+      width: 138px;
+      height: 80px;
+      left: 16px;
+      top: 215px;
+    }
+
+    & &__content {
+      gap: 10px;
+      width: 311px;
+    }
+
+    & &__title {
+      margin-left: 1px;
+    }
+
+    & &__series-name {
+      margin-left: 1px;
+    }
+
+    & &__series-time-container {
+      margin-right: -1px;
+    }
+
+    & &__stroke {
+      width: 311px;
+      margin: 20px 0 0 0;
+    }
+
+    & &__details-container {
+      margin: 14px 0 0 0;
+      gap: 16px;
+    }
+
+    & &__series-release-date {
+      margin: 0 1px 0 0;
+    }
+
+    & &__bulletpoint {
+      margin-bottom: 1px;
+    }
+
+    & &__series-season-info {
+      margin: 0;
+    }
+  }
+}
